@@ -42,7 +42,7 @@
 }
 
 .card {
-    max-width: 768px;
+    max-width: 760px;
     background-color: var(--White);
 }
 
@@ -74,7 +74,7 @@ body {
 }
 
 h1 {
-    font-size: clamp(2.3rem, 3vw, 3rem);
+    font-size: clamp(2.3rem, 2.8vw, 2.9rem);
     font-weight: 400;
     margin: 20px 0;
 }
@@ -91,7 +91,7 @@ h2 {
 }
 
 ul, ol {
-    margin-left: 20px;
+    margin-left: 17px;
 }
 
 ul li, ol li {
@@ -101,8 +101,8 @@ ul li, ol li {
 
 p, li, tr {
     font-size: clamp(0.95rem, 2vw, 1rem);
-    line-height: 25px;
-    font-weight: 600;
+    line-height: 20px;
+    font-weight: 400;
     color: var(--Stone-600);
 }
 
@@ -138,9 +138,9 @@ hr {
     background-color: var(--Stone-150);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
     .container {
-        padding: 100px; 
+        padding: 120px; 
     }
 
     .card {
