@@ -21,7 +21,7 @@
 h1 {
     font-size: clamp(2.3rem, 2.8vw, 2.9rem);
     font-weight: 400;
-    margin: 15px 0;
+    margin: 0.5em 0;
     color: var(--Stone-600)
 }
 
@@ -32,28 +32,28 @@ h1, h2 {
 h2 {
     font-size: 2.1rem;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 0.5em;
     color: var(--Brown-800);
 }
 
 ul, ol {
-    margin-left: 17px;
+    margin-left: 1em;
 }
 
 ul li, ol li {
-    margin-bottom: 8px;
-    padding-left: 15px;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
 }
 
 p, li, tr {
     font-size: clamp(0.95rem, 2vw, 1rem);
-    line-height: 25px;
+    line-height: 1.5em;
     font-weight: 500;
     color: var(--Stone-600);
 }
 
 p {
-    line-height: 25px;
+    line-height: 1.5em;
     color: var(--Stone-600);
     font-weight: 500;
 }
@@ -88,21 +88,21 @@ hr {
 }
 
 .card {
-    max-width: 720px;
+    max-width: 45em;
     background-color: var(--White);
 }
 
 .content {
-    padding: 25px;
+    padding: 1.5em;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25em;
 }
 
 .preparation {
-    padding: 20px;
+    padding: 1.25em;
     background-color: var(--Rose-50);
-    border-radius: 10px;
+    border-radius: 0.625em;
 }
 
 .preparation h2 {
@@ -117,13 +117,12 @@ body {
     background-color: var(--Stone-100);
     font-family: 'bodyfont', sans-serif;
     margin: 0 auto;
-    max-width: 1440px;
 }
 
 table {
     width: 100%;
-    padding: 20px;
-    margin-top: 15px;
+    padding: 1.25em;
+    margin-top: 1em;
     border-collapse: collapse;
 }
 
@@ -133,7 +132,7 @@ table td {
 }
 
 table tr {
-    padding: 20px;
+    padding: 1.25em;
 }
 
 .Calories {
@@ -141,28 +140,29 @@ table tr {
 }
 
 
-@media (min-width: 720px) {
+@media (min-width: 45em) {
     .container {
         padding: 7.5em; 
     }
 
     .card {
         padding: 2.2em;
-        border-radius: 20px;
+        border-radius: 1.25em;
     }
 
     .omelette {
-        border-radius: 10px;
+        border-radius: 0.625em;
     }
 
     .content {
-        padding: 0px;
+        padding: 0em;
     }
 }
 
 .attribution { 
     text-align: center;
-    padding: 20px;
+    padding: 1.25em;
+    font-size: 0.9rem;
 }
 .attribution a { 
     color: var(--light-blue);
