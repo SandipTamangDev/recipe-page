@@ -11,27 +11,27 @@
 </head>
 <body>
 
-  <main>
+  <main role="main" aria-labelledby="page-title">
     <section class="container">
       <article class="card">
 
 
-        <img class="omelette" src="assets/images/image-omelette.jpeg" alt="">
+        <img class="omelette" src="assets/images/image-omelette.jpeg" alt="Omelette">
         
 
         <div class="content">
           <div>        
-            <h1>Simple Omelette Recipe</h1>
+            <h1 id="page-title">Simple Omelette Recipe</h1>
             <p> An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
             to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
           </div>
 
-          <section class="preparation">
-            <h2>Preparation time</h2>
+          <section class="preparation" aria-labelledby="prep-title">
+            <h2 class="prep-title">Preparation time</h2>
             <ul>
-              <li><b>Total</b>: Approximately 10 minutes</li>
-              <li><b>Preparation</b>: 5 minutes</li>
-              <li><b>Cooking</b>: 5 minutes</li>
+              <li><strong>Total</strong>: Approximately 10 minutes</li>
+              <li><strong>Preparation</strong>: 5 minutes</li>
+              <li><strong>Cooking</strong>: 5 minutes</li>
             </ul>
           </section>
 
@@ -52,9 +52,9 @@
           <hr>
 
 
-          <div>
-            <h2>Instructions</h2>
-            <ol>
+          <div class="instructions" aria-labelledby="instruction-title">
+            <h2 id="instruction-title">Instructions</h2>
+            <ol class="instruction_ol">
               <li><b>Beat the eggs</b>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
               You can add a tablespoon of water or milk for a fluffier texture.</li>
               <li><b>Heat the pan</b>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
@@ -72,28 +72,28 @@
           <hr>
 
 
-          <div>
-            <h2>Nutrition</h2>
-            <p>The table below shows nutritional values per serving without the additional fillings.</p>
+          <div aria-labelledby="nutrition-title" aria-describedby="nutrition-desc">
+            <h2 id="nutrition-title">Nutrition</h2>
+            <p id="nutrition-desc">The table below shows nutritional values per serving without the additional fillings.</p>
             <table>
               <tr>
                 <td>Calories</td>
-                <td class="Calories"><b>277kcal</b></td>
+                <td class="Calories"><strong>277kcal</strong></td>
               </tr>
 
               <tr>
                 <td>Carbs</td>
-                <td class="Calories"><b>0g</b></td>
+                <td class="Calories"><strong>0g</strong></td>
               </tr>
 
               <tr>
                 <td>Protein</td>
-                <td class="Calories"><b>20g</b></td>
+                <td class="Calories"><strong>20g</strong></td>
               </tr>
 
               <tr>
                 <td>Fat</td>
-                <td class="Calories"><b>22g</b></td>
+                <td class="Calories"><strong>22g</strong></td>
               </tr>
             </table>
           </div>

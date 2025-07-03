@@ -1,7 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+    font-family: 'Outfit';
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf');
 }
 
 :root {
@@ -25,8 +29,15 @@ h1 {
     color: var(--Stone-600)
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 h1, h2 {
-    font-family: 'headingfont', sans-serif;
+    font-family: 'Young Serif', sans-serif;
 }
 
 h2 {
@@ -38,7 +49,7 @@ h2 {
 
 p, li, tr {
     font-size: clamp(0.95rem, 2vw, 1rem);
-    line-height: 1.5em;
+    line-height: 2em;
     font-weight: 500;
     color: var(--Stone-600);
 }
@@ -49,13 +60,35 @@ p {
     font-weight: 500;
 }
 
-ul, ol {
-    margin-inline-start: 1em;
+ul li::before {
+    content: "\2022";
+    color: var(--Rose-800);
+    margin-inline-end: 2rem;
+    font-size: 1em;
+    display: inline-block;
+    width: 1.5rem;
 }
 
-ul li, ol li {
-    margin-inline-end: 0.5em;
-    padding-inline-start: 1em;
+ul, ol {
+    list-style: none;
+}
+
+ol {
+    counter-reset: item;
+    position: relative;
+    padding-left: 3rem;
+}
+
+
+ol li::before {
+    counter-increment: item;
+    content: counter(item) ".";
+    margin-right: 1.5rem;
+    position: absolute;
+    width: 1.5rem;
+    left: 0;
+    color: var(--Rose-800);
+    font-weight: bold;
 }
 
 hr {
@@ -66,16 +99,6 @@ hr {
 
 .omelette {
     max-width: 100%;
-}
-
-@font-face {
-    font-family: 'bodyfont';
-    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
-}
-
-@font-face {
-    font-family: 'headingfont';
-    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf');
 }
 
 .container {
@@ -107,14 +130,14 @@ hr {
 .preparation h2 {
     margin-block-end: 0.7em;
     color: var(--Rose-800);
-    font-family: 'bodyfont', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: clamp(1.4rem, 2vw, 1.5rem);
     font-weight: 600;
 }
 
 body {
     background-color: var(--Stone-100);
-    font-family: 'bodyfont', sans-serif;
+    font-family: 'Outfit', sans-serif;
     margin: 0 auto;
 }
 
