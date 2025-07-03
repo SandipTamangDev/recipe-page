@@ -106,7 +106,7 @@ hr {
 }
 
 .preparation h2 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
     color: var(--Rose-800);
     font-family: 'bodyfont', sans-serif;
     font-size: clamp(1.4rem, 2vw, 1.5rem);
@@ -128,7 +128,10 @@ table {
 
 table td {
     border-bottom: 1px solid var(--Stone-150);
-    padding: 15px 0 15px 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+
 }
 
 table tr {
