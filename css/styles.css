@@ -36,15 +36,6 @@ h2 {
     color: var(--Brown-800);
 }
 
-ul, ol {
-    margin-left: 1em;
-}
-
-ul li, ol li {
-    margin-bottom: 0.5em;
-    padding-left: 1em;
-}
-
 p, li, tr {
     font-size: clamp(0.95rem, 2vw, 1rem);
     line-height: 1.5em;
@@ -58,9 +49,18 @@ p {
     font-weight: 500;
 }
 
+ul, ol {
+    margin-left: 1em;
+}
+
+ul li, ol li {
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+}
+
 hr {
     border: none;
-    height: 1px;
+    height: 0.1em;
     background-color: var(--Stone-150);
 }
 
