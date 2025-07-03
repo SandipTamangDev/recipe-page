@@ -80,15 +80,14 @@ hr {
 
 .container {
     width: 100%;
-    margin: 0 auto;
+    background-color: var(--Stone-100);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--Stone-100);
 }
 
 .card {
-    max-width: 45em;
+    max-width: min(100vw, 45em);
     background-color: var(--White);
 }
 
@@ -145,7 +144,8 @@ table tr {
 
 @media (min-width: 45em) {
     .container {
-        padding: 7.5em; 
+        padding-block-start: 7.5rem;
+        padding-block-end: 7.5rem;
     }
 
     .card {
