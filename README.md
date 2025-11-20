@@ -35,21 +35,25 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - Responsive design
 
 ### What I learned
+```html
+<h1 id="page-title">Simple Omelette Recipe</h1>
+```
+
 
 ```css
-hr {
-    border: none;
-    height: 1px;
-    background-color: var(--Stone-150);
-}
+  hr {
+      border: none;
+      height: 1px;
+      background-color: var(--Stone-150);
+  }
 ```
 ```css
-table {
-    width: 100%;
-    padding: 20px;
-    margin-top: 15px;
-    border-collapse: collapse;
-}
+  table {
+      width: 100%;
+      padding: 20px;
+      margin-top: 15px;
+      border-collapse: collapse;
+  }
 ```
 
 ## Author
